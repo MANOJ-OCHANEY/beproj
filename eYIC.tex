@@ -1,0 +1,288 @@
+\documentclass[12pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,total={170mm,257mm},left=20mm,top=20mm, textheight=700pt]{geometry}
+\usepackage{cite}
+\usepackage{mathptmx}
+\usepackage{abstract}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\renewcommand{\abstractnamefont}{\normalfont\Large\bfseries}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{1cm}
+			
+			\huge eYantra Ideas Competition Proposal
+			
+			\vspace{0.5cm}
+			\hspace{3cm}
+			\LARGE for
+			\newline
+			\newline
+			\vspace{2cm}
+			\Huge Trail Tracker : Anti-Poaching Intelligence
+			\vspace{0.5cm}
+			\newline
+			\Large \textbf{Project Mentor :} Mrs. Vidya Zope
+			
+			\vspace{1cm}
+			\textbf{Submitted by :}
+			\begin{enumerate}
+				\centering
+				\item Rohit Bhagtani
+				\item Pramodkumar Choudhary
+				\item Manoj Ochaney
+				\item Sarvesh Relekar
+			\end{enumerate}
+			
+			\vspace{0.8cm}
+			December 16, 2019
+			
+			
+		\end{center}
+	\end{titlepage}
+
+\newpage
+\begin{abstract}
+	Wildlife is a key part of the ecosystem, that keeps the balance of nature intact. However, a sharp decrease in a variety of species has a direct negative impact on natural ecosystems and local economies. Poaching is one of the most significant threats to wildlife. A poacher’s main objective is to gain large profits by selling or illegally trading valuable products obtained after processing body parts of animals, such as an elephant’s tusks which are used to make ivory, tiger’s skin which is used to make leather, etc. Hunters use different methods to capture animals. Many commercial poachers use military-grade weapons. Arrows and spears are also used to poach wildlife. Some use objects called snares (a set of wires tied to trees configured to capture any animal by their leg or neck that gets into it). Poachers also use techniques to chase the animal into large nets, known as trap nets. They can also be chased into pitfall traps (a large hole in the ground that is hidden with leaves and plants that an animal falls in when it tries to walk over it). Illegal ivory trade in Africa causes the continent to lose 100 elephants every day. The global tiger population has dropped over 95\% from the start of the 1900s and has resulted in three out of nine species brought to the brink of extinction. At this rate, these creatures will be endangered and will eventually face extinction. Thus, a solution that works in real-time is needed to pursue the cause of wildlife conservation by preventing the poaching of any species of animals - endangered or non-endangered by profit-hungry poachers. This can be approached by the help of Artificial Intelligence(AI). The AI algorithm every time develops new routes for patrolling units to prevent poachers from predicting patrol activity. However, this algorithm depends upon historic information, which may be inaccurately entered at certain sanctuaries or reserve forests. So, an alternate approach can be proposed, in the form of a monitoring system that can track poaching activity and predict poachers’ behavior and alert forest authorities for any suspicious crime.
+\end{abstract}
+
+\newpage
+\tableofcontents
+
+\section{Introduction}
+
+\subsection{Introduction}
+The main focus of this project is to make use of Artificial Intelligence and the Internet of Things (IoT) techniques to develop a real-time surveillance system that can help in preventing poaching activities carried out illegally by poachers. The goal is to provide a system which rather than traditional routine based patrolling provides patrolling only when needed to ensure that immediate action is taken in case of potential threat in forest area with less utilization of resources with high efficiency.
+
+\subsection{Motivation}
+With the introduction of AI and IoT, today real-time prediction and real-time 
+inter-communications, as well as intra-communications, can be achieved. Traditional approaches 
+to stop animal poaching included patrolling forest rangers along a specific path at particular 
+intervals to confiscate snares, arrest poachers, and make other observations. In due time AI 
+algorithms were developed to predict the poacher activity within spatial and temporal dimensions 
+using historical information. Another method used involved collaring animals with wireless 
+sensors so as to track them and report poaching activity around them. However, in order to 
+predict poaching activity, it is important to provide precise historical information which should 
+follow a particular pattern to draw proper correlation to poacher’s behavior. Also collaring may 
+affect animal behavior and cause injury to animals or devices alongside the cost involved in 
+designing such an expensive device. An alternative approach can be taken to prevent poaching 
+activity which involves placing an infrared and surveillance camera at specific strategic location 
+within the forest so that it may provide a proper vantage point to cover maximum area and detect 
+activities within its range attached to smart computing device which will perform the task of 
+detecting the activity and report the authorities if activity falls under suspicious category in 
+real-time. 
+
+\subsection{Problem Definition}
+To design a system that identifies potential threats to wildlife using Artificial Intelligence and 
+performs the following functions :
+\begin{enumerate}
+	\item Trace the presence of poachers in reserve forests and monitor their activities in real-time.
+	\item Identify the type of activity being carried out by the subject. 
+	\item When the subject is identified to be planning for or carrying out any illegal suspicious 
+	activity, notify the location to the concerned authorities. 
+\end{enumerate} 
+
+\section{Methodology}
+
+\subsection{Agile Methodology}
+The Agile methodology model is used in this project because in our project we have 
+continuously developed and tested the project throughout its life cycle. In agile methodology, we 
+have used the incremental model so that we could add new modules to the project and test it simultaneously.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=8cm, height=3cm]{/home/sarvesh/Downloads/incr.png}
+\end{figure}
+
+\newpage
+Our project consists of separate modules for every component involved. The modules related to the camera are separated from the ones that will be used to provide alerts and notifications to the forest authorities. Hence, an incremental agile approach is best suited for our project. Consequently, we have divided the problem into increments and are working on each stage of each increment. Each increment consists of modules based on how each module is built on top of another or is related/ reliant to another.
+
+\subsection{Neural Networks}
+Neural networks are a set of algorithms, modeled loosely after the human brain, that are 
+designed to recognize patterns. They interpret sensory data through a kind of machine 
+perception, labeling or clustering raw input. The patterns they recognize are numerical, contained 
+in vectors, into which all real-world data, be it images, sound, text or time series, must be 4 
+translated. Neural networks help us cluster and classify. You can think of them as a clustering 
+and classification layer on top of the data you store and manage. They help to group unlabeled 
+data according to similarities among the example inputs, and they classify data when they have a 
+labeled dataset to train on. (Neural networks can also extract features that are fed to other 
+algorithms for clustering and classification; so you can think of deep neural networks as 
+components of larger machine-learning applications involving algorithms for reinforcement 
+learning, classification, and regression.) The approach of neural networks is used as this method 
+can help us to learn from the previous methods taken for the development of the technology and 
+the live case scenarios would also be analyzed in the case of neural networks. As the system 
+keeps on improving in the case of neural networks, the software would always be up-to-date and 
+be at par with the current happenings in the surroundings.
+
+\section{Literature Survey}
+
+\subsection{Research Papers}
+
+\subsubsection{A Multi-Stream Bi-Directional Recurrent Neural Network for Fine-Grained Action Detection By Bharat Singh, Tim K. Marks, Michael Jones, Oncel Tuzel, Ming Shao}
+
+\underline{Inference Drawn} :
+In this paper, they showed that using a multi-stream network that augments full-frame image features with features from a bounding box surrounding the actor is useful in fine-grained action detection. They showed that for this task, pixel trajectories give better results than stacked optical flow due to their location correspondence. They showed that to capture long-term temporal dynamics within and between actions, a bi-directional LSTM is highly effective. They also provided an analysis of how long an LSTM network can remember information in the action detection scenario. Finally, their results represent a significant step forward in terms of accuracy on a difficult publicly available dataset (MPII Cooking 2), as well as on a new MERL Shopping Dataset that they are releasing with the publication of this paper.
+
+\subsubsection{Exploiting Data and Human Knowledge for Predicting Wildlife Poaching by Gurumurthy S., Yu L., Zhang C., Jin Y., Li W., Zhang X., Fang F.}	
+\underline{Inference Drawn} :
+In this paper, they focus on eliciting and exploiting human knowledge to enhance the predictive analysis in wildlife poaching. The dataset in this domain has very few positive data points and suffers from uncertainty in negative labels. They designed questionnaires to elicit information from domain experts. The information is then used to estimate a threat level of each data point. Based on the estimated threat level and other qualitative domain knowledge such as most unlabeled data points are negative, we augment the dataset for training. They apply our approach to a bagging ensemble of decision trees, which leads to significant improvement using multiple evaluation criteria. Improvements can also be seen when the development approach that combines data and human knowledge is applied to a neural network model. However, the decision tree ensemble leads to much better performance than the neural network-based model. Taking cues from the results obtained in this exemplar model, they expect improved performance on more complex models as well, when their approach is applied.
+
+\subsubsection{Action Recognition in Video Sequences using Deep Bi-directional LSTM with CNN Features by Amin Ullah, Jamil Ahmad, Khan Muhammad, Muhammad Sajjad, Sung Wook Baik.}
+\underline{Inference Drawn} :
+In this paper, they proposed an action recognition framework by utilizing frame-level deep features of the CNN and processing it through DB-LSTM. First, CNN features are extracted from the video frames, which are fed to DB-LSTM, where two layers are stacked on both forward and backward pass of the LSTM. This helped in recognizing complex frame to frame hidden sequential patterns in the features. They analyzed the video in N chunks, where the number of chunks depends on the time interval “T” for processing. Due to these properties, the proposed method is capable of learning long term complex sequences in videos. It can also process full-length videos by providing a prediction for time interval “T”. The output for small chunks is combined for the final output. The experimental results indicate that the recognition score of the proposed method successfully dominates other recent state-of-the-art action recognition techniques on UCF-101, HMDB51, and YouTube action video datasets. These characteristics make their proposed method more suitable for processing of visual data and can be an integral component of smart systems.
+
+\subsection{Patents}
+
+\subsubsection{High-speed Video Action Recognition and Localization, 2011}
+\underline{Details} :
+An apparatus for detecting an action in a test video. In an illustrative embodiment, the apparatus includes a first mechanism for receiving a query for a particular action via a query video. A second mechanism employs motion vectors associated with the test video to compute one or more motion-similarity values. The one or more motion-similarity values represent motion similarity between the first group of pixels in the first frame of a query video and the second group of pixels in a second frame of the test video based on the motion vectors. A third mechanism uses one or more similarity values to search for a particular action or similar action in the test video. In a more specific embodiment, another mechanism aggregates the similarity values over a predetermined number of frames to facilitate estimating where the particular action or version thereof occurs or is likely to occur in the test video.
+\newline
+Link: \underline{http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=8027542}
+
+\subsubsection{Activity Recognition Systems and Methods, 2019}
+\underline{Details} :
+Systems and methods for recognizing and/or predicting activities of a user of a mobile device are disclosed. In certain embodiments, the systems and methods may predict a future activity and/or location of a mobile device user based on current and/or historical device data and/or other personal information relating to the user. In some embodiments, probabilistic determinations and/or other statistical models may be used to predict future activities and locations of a mobile device user. The disclosed systems and methods may further utilize location and/or activity recognition and/or prediction methods to deliver personalized services to a user of a mobile device at a particular time and/or location.
+\newline
+Link: \underline{http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=10200822}
+
+\subsection{Other References}
+
+\subsubsection{Long Range Drone / UAV for Anti-poaching and Wildlife Conservation}
+\underline{Inference Drawn} :
+Unmanned Aerial Systems with intelligent, surveillance and reconnaissance (target acquisition) cooperate with local area anti-poaching team for data collection to discover risk places and to coordinate UAV flying missions. In the last 2 decades, UAV technological innovation and applications have grown popular greatly. Within the circumstance of African areas, UAVs have the prospect to trace the positioning of individual animals, identify poachers, and notify counter-poaching procedures by rangers. Certainly one of the very best advantages of UAVs is the option to use a variety of gimbals, which are modular (can lift-up and flip-up), and hence removable. Infra-red detectors can easily detect heating signatures of wild animals or people at nighttime, strobes may be used to illumine poachers, magnet detectors could be used to identify the existence of guns, and audio recorders can easily identify fire of the gun, ascertain out its place, and also determine weaponry profiles.
+
+\subsubsection{An Intelligent Real-time Wireless Sensor Network Tracking System For Monitoring} 
+\underline{Inference Drawn} :
+Rhinos and elephants In Tanzania National Parks are protected using a unique technique. The advancement of wireless sensor networks yields a variety of them for wildlife tracking. One typical application for wireless sensor networks is in animal tracking and monitoring in wildlife environments. A significant number of studies have been done in tracking animals with sensor networks. However, from the recent literature, it is observed that there is not much study that has been done on an intelligent real-time sensor network that is capable of alerting the rangers an incidence of animal poaching before it happened. In this paper, an intelligent wireless sensor system for tracking and monitoring rhinos and elephants is proposed.
+
+\section{Requirements of Proposed System}
+
+	\subsection{Hardware Requirements}
+\begin{itemize}
+	\item Surveillance and Thermal Cameras 
+	\item Raspberry Pi Toolkits 
+	\item Vision Processing Unit (Intel Movidius Neural Compute Stick) 
+	\item Backend Server 
+	\item Android Device (to receive alert notifications) 
+\end{itemize}
+
+\subsection{Software Requirements}
+\begin{itemize}
+	\item Operating System (OS): 
+	\subitem a. Windows 10 or better 
+	\subitem b. Linux (Ubuntu 18.04 or better) 
+	\item Raspberry OS 
+	\item OpenCV 
+	\item OpenVino 
+\end{itemize}
+
+\subsection{Technology and Tools}
+\begin{itemize}
+	\item \textbf{Programming Language :} Python 3.6+
+	\item \textbf{Frameworks / Libraries :}
+	\begin{itemize}
+		\item Tensorflow
+		\item Keras
+	\end{itemize}
+	\item \textbf{Server Technologies :}
+	\begin{itemize}
+		\item MongoDB 
+		\item NodeJS
+		\item Socket.io (For real-time notifications and updates)
+	\end{itemize}
+\end{itemize}
+
+\section{Implementation}
+
+\subsection{Block Diagram and Component Details}
+
+\subsubsection{Block Diagram}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=8.5cm]{/home/sarvesh/Pictures/block.png}
+\end{figure}
+
+\subsubsection{Explanation}
+
+\paragraph{Surveillance Camera}
+The surveillance camera contains an infrared camera that has the feature to provide a normal color frame as well as infrared images to detect heat emitted from entities. Color images are useful to detect the presence of entities in the forest in daylight. Infrared images provide heat signatures of entities at night time or to detect camouflage.
+
+\paragraph{Raspberry Pi + Intel Movidius NCS Module}
+Raspberry Pi is a single-board computer that helps to process the transmitted frames from the camera with the help of a Vision Processing Unit. Intel Movidius NCS is a Vision Processing Unit that accelerates the performance of Neural Network to provide output without any delay. This helps in increasing the precision and accuracy AI algorithm with a low power supply that can be supplied via a USB output. This module will be attached to the camera unit wherein frames are transmitted in the neural network which performs the processing on frames and transmits data to the server.
+
+\paragraph{Centralized Server}
+A centralized server acts as the heart of a system wherein the data transmitted from the device reaches to raise any alarm with the help of Socket.io technique that provides real-time communication between Module and Server and also between Server and Android Devices. Also, the centralized server helps in storing data regarding the historic information that is transmitted from the device to make further analysis increasing the scope of the project.
+
+\paragraph{Android Application}
+Android Application helps the forest authority by providing real-time updates in case any suspicious activity taking place in the forest. The application will provide location updates of the suspicious activity. This helps the patrol officers to get to the location quickly to take necessary steps before any mishap.
+
+\subsection{Flowchart}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=8cm, height=6cm]{/home/sarvesh/Downloads/flowchart.jpg}
+\end{figure}
+
+\subsection{Proposed Algorithm }
+\begin{enumerate}
+	\item \textbf{Monitor Surveillance through camera :}
+	\newline The input from the camera is color frames during the day or the heat signature emitted from the infrared camera (so that camouflaged entities can be detected within daylight or at night).
+	\item \textbf{Process the input frames using the Intel Movidius NCS Visual Processing Unit (VPU).}
+	\item \textbf{Ignore any frames in which no human or animal is detected.}
+	\item \textbf{Detect any presence of human and classify as poacher or forest ranger :}
+	\newline Within the given frame, the processing unit will first detect a human along with its pose(so that it can properly estimate the activity) with the help of a deep neural network and then predict the activity of the entity.
+	\begin{enumerate}
+		\item Determine whether the object encountered is human or animal.
+		\item If it is human, then identify it as a forest ranger or poacher.
+	\end{enumerate}
+	\item \textbf{Identify the pose of the poacher :}
+	\newline The poses under consideration are :
+	\begin{enumerate}
+		\item Bending
+		\item Sleeping
+		\item Crawling
+		\item Standing
+	\end{enumerate}
+	\textbf{Update :}
+	If a person is perceived to be standing still and observing something continuously for a longer period of time (2 minutes or more) then it will be considered a suspicious action.
+	\item \textbf{Determine the action performed :}
+	\newline Suspicious activity involves:
+	\begin{enumerate}
+		\item Holding a gun
+		\item Setting up traps
+		\item Throwing a bait
+	\end{enumerate}
+	\item \textbf{If the observed activity is classified as suspicious, track the target by location and notify the Centralized Server.}
+	\item \textbf{Upon receiving notification regarding suspicious activity, the Centralized Server issues an alert notification to the Android Devices of any Forest Rangers in the vicinity of the target area. }
+\end{enumerate}
+
+\section{Feasibility}
+\begin{itemize}
+	\item Drones can be used to take immediate action since they can travel within the terrain more quickly.
+	\item Once poacher is detected, his/her path can be traced and mapped to its location in order to provide its path to forest authorities
+	\item Detecting which animal is present at which location by the help of varying heat signatures of the animals. This may help in detecting which animal is vulnerable to poachers.	
+\end{itemize}
+
+\bibliographystyle{plain}
+\bibliography{M335}
+
+% copy the item tag as it is and paste the remaining references by its side.
+\begin{enumerate}
+	\item Mr. Rachit Singh, Dr. G. M. Asutkar, “Survey on various Wireless Sensor Network Techniques for Monitoring Activities of Wild Animals”, IEEE Sponsored 2nd International Conference on Innovations in Information, Embedded, and Communication Systems (ICIIECS)2015, 978-1-4799-6818-3/15/ © 2015 IEEE
+	\item Cheng-Bin Jin, Shengzhe Li, and Hakil Kim, “ Real-Time Action Detection in Video Surveillance using Sub-Action Descriptor with Multi-CNN”, Institute for Information and Communications Technology Promotion (IITP) funded by the Korean government (MSIP) (B0101-15-1282-00010002, Suspicious pedestrian tracking using multiple fixed cameras).
+	\item Swaminathan Gurumurthy, Lantao Yu, Chenyan Zhang, Yongchao Jin, Weiping Li, Xiaodong Zhang, and Fei Fang. 2018. Exploiting Data and Human Knowledge for Predicting Wildlife Poaching. In COMPASS ’18: ACM SIGCAS Conference on Computing and Sustainable Societies (COMPASS), June 20–22, 2018, Menlo Park and San Jose, CA, USA. ACM, New York, NY, USA, 8 pages.
+	\item Skyeton. Long-range drone/UAV for Anti-poaching and Wildlife Conservation[Online]
+	\item Erick Alphonce Massawe, Michael Kisangiri, Shubi Kaijage, and Padmanabhan Seshaiyer. “An Intelligent Real-time Wireless Sensor Network Tracking System for Monitoring Rhinos And Elephants In Tanzania National Parks: A Review”, International Journal of Advanced Smart Sensor Network Systems (IJASSN), Vol 7, No.4, October 2017 DOI:10.5121/ijassn.2017.7401
+\end{enumerate}
+
+
+\end{document}
